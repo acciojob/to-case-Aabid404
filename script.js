@@ -1,12 +1,12 @@
 function toCase(text) {
-  // write your code here
-	 if (str === '') {
+  // Handle empty string case
+  if (text === '') {
     return '-';
   }
-  return str.toLowerCase() + '-' + str.toUpperCase();
+  // Return lowercase + '-' + uppercase
+  return text.toLowerCase() + '-' + text.toUpperCase();
 }
 
 // DO not change the code below
-
 const text = prompt("Enter text:");
 alert(toCase(text));
